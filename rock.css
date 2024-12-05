@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #a8c0ff, #d4a5f9)
+}
+
+.game-container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    
+}
+
+h1 {
+    color: #333;
+}
+
+.score-board {
+    margin: 20px 0;
+}
+
+.score-board p {
+    font-size: 1.2em;
+    color: black;
+}
+
+.buttons button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff89;
+    
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+#result-message {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#final-result {
+    margin-top: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: red;
+}
+@keyframes popAndReduce {
+    0% {
+        transform: scale(1);
+        color: #ff0000;
+    }
+    50% {
+        transform: scale(1.2);
+        color: #00ff00;
+    }
+    100% {
+        transform: scale(1);
+        color: #ff0000;
+    }
+}
+#final-result {
+    animation: popAndReduce 1.5s ease-in-out infinite;
+}
